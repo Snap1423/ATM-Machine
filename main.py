@@ -1,8 +1,8 @@
-# initalize 
-balance = 50000
+# Initalize 
+balance = 50000 
 pin = 2008
 
-# login
+# Login
 print('='*40)
 print("Welcome to ATM")
 print('='* 40)
@@ -12,17 +12,17 @@ while True:
     enter = int(input("Please Enter your pin: "))
 
     if enter == pin:
-        print("Sucessful!")
+        print("Sucessful!✅")
         break
     else:
-        print("Incorrect pin, try again")
+        print("Incorrect pin ❌, try again")
 
-# menu
+# Menu
 while True:
     print("--------MENU-----------\n")
     print("1.Check Balance")
-    print("2.Deposite Money")
-    print("3.Withdraw Money")
+    print("2.Deposite Money💵")
+    print("3.Withdraw Money💰")
     print("4.Exit")
     
     choice = int(input("Enter a choice: "))
@@ -36,7 +36,7 @@ while True:
         case 3:
             amount = int(input("Enter the Amount: "))
             if balance<amount:
-                print("Insufficient Balance")
+                print("❌Insufficient Balance")
             else:
                 balance-=amount
                 print(f"\nYou have sucessfuly withdrawed the amount{amount} Current balance: {balance}")
@@ -44,6 +44,6 @@ while True:
             print("\nThank you for using the ATM...Goodbye!")
             break
         case _:
-            print("Invalid Choice, try again")
+            print("Invalid Choice ⚠️, try again")
 
 
